@@ -1,0 +1,80 @@
+.sidebar {
+  background-color: #212121;
+  color: #fff;
+  font-size: 82%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 4.5rem;
+}
+
+.sidebar .account__details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.9rem;
+}
+.sidebar .MuiSvgIcon-root {
+  font-size: 3rem;
+  margin-right: 0.8rem;
+}
+.sidebar .drop {
+  font-size: 2rem;
+  margin-left: 0.8rem;
+}
+.account__details h6 {
+  margin-bottom: 0;
+}
+.main {
+  background-color: #424242;
+  padding: 1.1rem;
+}
+.main h6 {
+  margin-bottom: 0;
+  color: rgb(175, 173, 173);
+}
+.dash__sidebar {
+  background-color: #212121;
+}
+.components {
+  background-color: #424242;
+  color: rgb(175, 173, 173);
+}
+.firstChild {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  padding-right: 0;
+}
+.firstChild .first {
+  display: flex;
+}
+.first h6 {
+  margin-bottom: 0;
+}
+.first .MuiSvgIcon-root {
+  font-size: 1.2rem;
+}
+.second .MuiSvgIcon-root {
+  font-size: 0.9rem;
+}
+
+.secondChild {
+  color: rgb(175, 173, 173);
+  padding: 1.2rem;
+  padding-top: 0.1rem;
+  padding-left: 2.2rem;
+}
+.secondChild h6 {
+  margin: 0.9rem auto;
+}
+.components .hori {
+  background-color: rgb(175, 173, 173);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media (max-width: 992px) {
+  .sidebar {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.dashboard .logo {
+  font-family: "Pacifico", cursive;
+}
+.dash {
+  display: flex;
+}
+.sidebarComp {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 300px;
+  overflow-y: auto;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #0000ff 0%, #cc33ff 100%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to top, #0000ff 0%, #cc33ff 100%);
+}
+
+.dashComp {
+  margin-left: 18.5rem;
+  margin-top: 5rem;
+}
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../../../img/navbargrad.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.drawer__icon {
+  margin: 0;
+  margin-right: 1.2rem;
+  background-color: transparent !important;
+  outline: none !important;
+  border: none !important;
+  color: #fff;
+}
+.drawer__icon .MuiSvgIcon-root {
+  font-size: 2rem;
+}
+
+.notify__icons {
+  margin-right: 2rem;
+  display: flex;
+}
+.notify__icons .MuiSvgIcon-root {
+  margin: auto 1rem;
+  cursor: pointer;
+}
+.search__bar {
+  display: flex;
+  background-color: rgba(211, 211, 211, 0.199);
+  align-items: center;
+  margin: 1.2rem 4rem;
+  border-radius: 1rem;
+  padding-left: 1.3rem;
+}
+.search__bar .input__bar {
+  color: white;
+}
+.search__bar .MuiSvgIcon-root {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+.apps__icons {
+  display: flex;
+  background-color: rgba(211, 211, 211, 0.199);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.dashboard__content {
+  padding: 1.5rem;
+  background-color: rgba(218, 218, 218, 0.199);
+}
+.dashboard__content .row {
+  margin-bottom: 1.2rem;
+}
+
+.dashboard__content .heading {
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.dashboard__content .typo {
+  font-weight: 900 !important;
+}
+.spc {
+  background-color: #212121 !important;
+  color: #fff !important;
+}
+.checkbox {
+  display: none;
+}
+label {
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .dashboard__content .column {
+    margin-bottom: 1.2rem;
+  }
+  .dashboard__content .row {
+    margin-bottom: 0;
+  }
+  .dashComp {
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+  .sidebarComp {
+    left: -20rem;
+  }
+  .checkbox:checked ~ .sidebarComp {
+    left: 8rem;
+  }
+}
+@media (min-width: 992px) {
+  .drawer__icon {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .notify__icons {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+  }
+  .search__bar {
+    display: none;
+  }
+  .dashboard {
+    padding: 0.8rem;
+  }
+}
