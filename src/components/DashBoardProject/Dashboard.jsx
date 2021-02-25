@@ -15,7 +15,7 @@ export default function Dashboard() {
         </div>
 
         <div className="row">
-          <div className="col-md-6 col-lg-3 column">
+          <div className="col-lg-6 col-xl-3 column">
             <Paper className="heading">
               <Typography className="typo">
                 It is a long established fact that a reader will be distracted
@@ -26,7 +26,7 @@ export default function Dashboard() {
               </Typography>
             </Paper>
           </div>
-          <div className="col-md-6 col-lg-3 column">
+          <div className="col-lg-6 col-xl-3 column">
             <Paper className="heading">
               <Typography className="typo">
                 It is a long established fact that a reader will be distracted
@@ -37,7 +37,7 @@ export default function Dashboard() {
               </Typography>
             </Paper>
           </div>
-          <div className="col-md-6 col-lg-3 column">
+          <div className="col-lg-6 col-xl-3 column">
             <Paper className="heading">
               <Typography className="typo">
                 It is a long established fact that a reader will be distracted
@@ -48,7 +48,7 @@ export default function Dashboard() {
               </Typography>
             </Paper>
           </div>
-          <div className="col-md-6 col-lg-3 column">
+          <div className="col-lg-6 col-xl-3 column">
             <Paper className="heading">
               <Typography className="typo">
                 It is a long established fact that a reader will be distracted

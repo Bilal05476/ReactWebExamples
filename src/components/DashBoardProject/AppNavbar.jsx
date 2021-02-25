@@ -45,7 +45,6 @@ function AppNavbar() {
                   <MenuIcon />
                 </button>
                 <Drawer
-                  className="drawerSlide"
                   anchor={anchor}
                   open={state[anchor]}
                   onClose={toggleDrawer(anchor, false)}
