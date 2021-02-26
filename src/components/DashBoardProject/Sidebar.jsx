@@ -5,6 +5,11 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import TimelineIcon from "@material-ui/icons/Timeline";
 import WidgetsIcon from "@material-ui/icons/Widgets";
 import FolderIcon from "@material-ui/icons/Folder";
+import MailIcon from "@material-ui/icons/Mail";
+import ChatIcon from "@material-ui/icons/Chat";
+import ContactsIcon from "@material-ui/icons/Contacts";
+import ListIcon from "@material-ui/icons/List";
+import PersonIcon from "@material-ui/icons/Person";
 
 import "./css/sidebar.css";
 
@@ -70,42 +75,53 @@ const Sidebar = () => {
             <ArrowForwardIosIcon />
           </div>
         </div>
-        <br />
+
         <br />
         <hr className="hori"></hr>
         <br />
       </div>
 
       <div className="components">
+        <h6>IN-Build APPS</h6>
         <div className="firstChild">
           <div className="first">
-            <FolderIcon />
-            <h6>Components</h6>
-          </div>
-          <div className="second">
-            <ArrowForwardIosIcon />
+            <MailIcon />
+            <h6>Mail</h6>
           </div>
         </div>
         <div className="firstChild">
           <div className="first">
-            <WidgetsIcon />
-            <h6>Widgets</h6>
-          </div>
-          <div className="second">
-            <ArrowForwardIosIcon />
+            <ListIcon />
+            <h6>To-Do</h6>
           </div>
         </div>
         <div className="firstChild">
           <div className="first">
-            <TimelineIcon />
-            <h6>Metrics</h6>
-          </div>
-          <div className="second">
-            <ArrowForwardIosIcon />
+            <ContactsIcon />
+            <h6>Contact</h6>
           </div>
         </div>
+        <div className="firstChild">
+          <div className="first">
+            <ChatIcon />
+            <h6>Chat</h6>
+          </div>
+        </div>
+
         <br />
+        <hr className="hori"></hr>
         <br />
+      </div>
+
+      <div className="components">
+        <h6>SOCIAL APPS</h6>
+        <div className="firstChild">
+          <div className="first">
+            <PersonIcon />
+            <h6>Profile</h6>
+          </div>
+        </div>
+
         <hr className="hori"></hr>
         <br />
       </div>

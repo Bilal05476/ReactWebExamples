@@ -36,6 +36,7 @@
 .dashComp {
   margin-left: 18.5rem;
   margin-top: 5rem;
+  width: 100%;
 }
 .dashboard {
   display: flex;
@@ -85,6 +86,7 @@
   background-color: rgba(211, 211, 211, 0.199);
   padding: 0.5rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .dashboard__content {
   padding: 1.5rem;
@@ -94,16 +96,8 @@
   margin-bottom: 1.2rem;
 }
 
-.dashboard__content .heading {
-  padding: 1.2rem;
-  margin-bottom: 1.2rem;
-}
 .dashboard__content .typo {
   font-weight: 900 !important;
-}
-.spc {
-  background-color: #212121 !important;
-  color: #fff !important;
 }
 
 @media (max-width: 992px) {
@@ -118,18 +112,49 @@
     margin-top: 5rem;
   }
   .sidebarComp {
-    left: -20rem;
+    display: none;
   }
+
+  .dashboard {
+    padding: 0.8rem;
+  }
+  .search__bar {
+    display: none;
+  }
+  /* .bottomNavComp {
+    display: block;
+  } */
 }
 @media (min-width: 992px) {
   .drawer__icon {
     display: none;
   }
-}
-@media (max-width: 767px) {
-  .notify__icons {
+  .bottomNavComp {
     display: none;
   }
+}
+@media (min-width: 766px) {
+  .bottomNav {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .notifi__lg {
+    display: none;
+  }
+  .notify__icons {
+    margin: 0;
+  }
+  .bottomNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../img/navbargrad.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+
   .logo {
     width: 100%;
   }

@@ -20,6 +20,7 @@
 .sidebar .drop {
   font-size: 2rem;
   margin-left: 0.8rem;
+  cursor: pointer;
 }
 .account__details h6 {
   margin-bottom: 0;
@@ -45,6 +46,8 @@
   justify-content: space-between;
   padding: 1.2rem;
   padding-right: 0;
+  padding-top: 0.8rem;
+  cursor: pointer;
 }
 .firstChild .first {
   display: flex;
@@ -67,6 +70,10 @@
 }
 .secondChild h6 {
   margin: 0.9rem auto;
+  cursor: pointer;
+}
+.components > h6 {
+  padding: 1.2rem;
 }
 .components .hori {
   background-color: rgb(175, 173, 173);

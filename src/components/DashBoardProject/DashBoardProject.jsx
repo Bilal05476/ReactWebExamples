@@ -2,6 +2,7 @@ import Dashboard from "./Dashboard";
 import Sidebar from "./Sidebar";
 import AppNavbar from "./AppNavbar";
 import "./css/dashpro.css";
+import BottomNav from "./BottomNavigations";
 
 const DashBoardProject = () => {
   return (
@@ -14,6 +15,9 @@ const DashBoardProject = () => {
         <div className="dashComp">
           <Dashboard />
         </div>
+      </div>
+      <div className="bottomNavComp">
+        <BottomNav />
       </div>
     </>
   );

@@ -2,16 +2,12 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import InputBase from "@material-ui/core/InputBase";
 import SearchIcon from "@material-ui/icons/Search";
-import AddAlertIcon from "@material-ui/icons/AddAlert";
 import Typography from "@material-ui/core/Typography";
-import MessageIcon from "@material-ui/icons/Message";
-import PublicIcon from "@material-ui/icons/Public";
-import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
-import AppsIcon from "@material-ui/icons/Apps";
 import MenuIcon from "@material-ui/icons/Menu";
 import Drawer from "@material-ui/core/Drawer";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
+import NotifiCompo from "./NotifiCompo";
 
 import "./css/dashpro.css";
 
@@ -58,6 +54,7 @@ function AppNavbar() {
           <Typography className="logo" variant="h6" noWrap>
             Dashboard
           </Typography>
+
           <div className="search__bar">
             <SearchIcon />
 
@@ -67,15 +64,8 @@ function AppNavbar() {
             />
           </div>
         </Toolbar>
-        <div className="notify__icons">
-          <div className="apps__icons">
-            <AppsIcon />
-            Apps
-            <KeyboardArrowDownIcon />
-          </div>
-          <AddAlertIcon />
-          <MessageIcon />
-          <PublicIcon />
+        <div className="notifi__lg">
+          <NotifiCompo />
         </div>
       </div>
     </AppBar>
