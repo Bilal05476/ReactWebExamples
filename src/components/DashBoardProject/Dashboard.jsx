@@ -14,8 +14,11 @@ import TextField from "@material-ui/core/TextField";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Tabs from "@material-ui/core/Tabs";
-
+import DataChart from "./DataChart";
+import DataChart2 from "./DataChart2";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
+import CoinData from "./CoinData";
+import SendIcon from "@material-ui/icons/Send";
 
 export default function Dashboard() {
   return (
@@ -35,10 +38,26 @@ export default function Dashboard() {
         </div>
 
         <div className="row">
-          {["9,626", "7,831", "1,239", "849"].map((price, ind) => (
+          {CoinData.map((item, ind) => (
             <div key={ind} className="col-lg-6 col-xl-3 column">
-              <Paper className="heading ">
-                <Typography className="typo">${price}</Typography>
+              <Paper
+                className="heading balanceHistory px-0"
+                style={{ paddingBottom: "0" }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <Typography className="typo coinPrice">
+                    ${item.price}
+                  </Typography>
+                  <small className="text-success">{item.percentage}%</small>
+                </div>
+
+                <small className="px-4 text-muted">{item.coin}</small>
+                <DataChart2 />
               </Paper>
             </div>
           ))}
@@ -127,16 +146,71 @@ export default function Dashboard() {
             </Paper>
           </div>
           <div className="col-md-6 column">
-            <Paper className="heading ">
+            <Paper className="heading balanceHistory">
               <Typography className="">Balance History</Typography>
+              <div className="my-2">
+                <DataChart />
+              </div>
             </Paper>
           </div>
         </div>
 
         <div className="row">
           <div className="col-md-12 col-lg-5 column">
-            <Paper className="heading">
-              <Typography className="">Send Money to</Typography>
+            <Paper>
+              <div className="sendMoneyHeader">
+                <Typography className="">Send Money to</Typography>
+                <small className="wallet wallet2">
+                  <AddCircleOutlineIcon /> &nbsp; Add New Account
+                </small>
+              </div>
+              <table className="table">
+                <tr className="tableHeader">
+                  <th>Acount Holder Name</th>
+                  <th>Last Transfer</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td>Bilal</td>
+                  <td>17 days ago</td>
+                  <td style={{ color: "rgb(4, 80, 221)" }}>
+                    <SendIcon />
+                    pay
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ahmed</td>
+                  <td>7 days ago</td>
+                  <td style={{ color: "rgb(4, 80, 221)" }}>
+                    <SendIcon />
+                    pay
+                  </td>
+                </tr>
+                <tr>
+                  <td>Aamir</td>
+                  <td>5 days ago</td>
+                  <td style={{ color: "rgb(4, 80, 221)" }}>
+                    <SendIcon />
+                    pay
+                  </td>
+                </tr>
+                <tr>
+                  <td>Samad</td>
+                  <td>10 days ago</td>
+                  <td style={{ color: "rgb(4, 80, 221)" }}>
+                    <SendIcon />
+                    pay
+                  </td>
+                </tr>
+                <tr>
+                  <td>Saim</td>
+                  <td>9 days ago</td>
+                  <td style={{ color: "rgb(4, 80, 221)" }}>
+                    <SendIcon />
+                    pay
+                  </td>
+                </tr>
+              </table>
             </Paper>
           </div>
           <div className="col-md-6 col-lg-3 column ">

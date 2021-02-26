@@ -3,7 +3,10 @@
   align-items: center;
   justify-content: center;
 }
-
+.coinPrice {
+  padding-left: 1.4rem;
+  padding-right: 0.5rem;
+}
 .heading {
   border-bottom: 0.1rem solid rgb(4, 80, 221);
 }
@@ -122,6 +125,29 @@
   width: 4%;
   height: 1px;
 }
+.balanceHistory {
+  flex-direction: column;
+}
+
+.sendMoneyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+}
+.wallet2 {
+  margin: 0;
+}
+
+.tableHeader {
+  border-bottom: 0.1rem solid rgb(4, 80, 221) !important;
+  padding: 1.2rem;
+}
+.table .MuiSvgIcon-root {
+  font-size: 0.7rem;
+  margin-right: 0.3rem;
+}
+
 @media (max-width: 780px) {
   .cryptoNews {
     flex-direction: column;
