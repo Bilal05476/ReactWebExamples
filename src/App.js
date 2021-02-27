@@ -1,7 +1,7 @@
 import React from "react";
 // import client from './config/gql_config';
 // import { ApolloProvider } from '@apollo/client';
-import DashBoardProject from "./components/DashBoardProject/DashBoardProject";
+import NoWork from "./components/NoWork/NoWork";
 const App = () => {
   return (
     // <ApolloProvider client={client}>
@@ -9,7 +9,7 @@ const App = () => {
     //     <Api />
     //   </div>
     // </ApolloProvider>
-    <DashBoardProject />
+    <NoWork />
   );
 };
 
