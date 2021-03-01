@@ -40,6 +40,11 @@ button {
 }
 .jumbotron {
   background-image: url(./img/background.png);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.jumboBtn {
+  background: transparent;
+  color: #fff;
 }
