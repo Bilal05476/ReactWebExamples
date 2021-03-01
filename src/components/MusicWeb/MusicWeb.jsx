@@ -1,4 +1,5 @@
 import MusicNav from "./MusicNav";
+import JumboWeb from "./JumboWeb";
 
 const MusicWeb = () => {
   return (
@@ -14,6 +15,7 @@ const MusicWeb = () => {
         </div>
       </div>
       <MusicNav />
+      <JumboWeb />
     </>
   );
 };
