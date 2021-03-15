@@ -1,13 +1,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
+import { useState } from "react";
 
 const DropdownComp = () => {
-    return (
+  const [value, setValue] = useState("");
+  const handleSelect = (e) => {
+    setValue(e);
+  };
+  return (
+    <div className="App container">
       <DropdownButton
         alignRight
         title="Dropdown right"
         id="dropdown-menu-align-right"
+        onSelect={handleSelect}
       >
         <Dropdown.Item eventKey="option-1">option-1</Dropdown.Item>
         <Dropdown.Item eventKey="option-2">option-2</Dropdown.Item>
@@ -15,7 +22,8 @@ const DropdownComp = () => {
         <Dropdown.Divider />
         <Dropdown.Item eventKey="some link">some link</Dropdown.Item>
       </DropdownButton>
-    );
-
-}
+      <h4>You selected {value}</h4>
+    </div>
+  );
+};
 export default DropdownComp;

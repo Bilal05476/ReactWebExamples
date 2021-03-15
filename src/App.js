@@ -1,7 +1,7 @@
 import React from "react";
-import NoWork from "./components/NoWork/NoWork";
+import DropdownComp from "./components/DropdownComp/DropdownComp";
 const App = () => {
-  return <NoWork />;
+  return <DropdownComp />;
 };
 
 export default App;
