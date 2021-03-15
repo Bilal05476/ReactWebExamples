@@ -1,16 +1,15 @@
 import React from "react";
-// import client from './config/gql_config';
-// import { ApolloProvider } from '@apollo/client';
-import StrapiApi from "./components/StrapiApi/StrapiApi";
+import NoWork from "./components/NoWork/NoWork";
 const App = () => {
-  return (
-    // <ApolloProvider client={client}>
-    //   <div>
-    //     <Api />
-    //   </div>
-    // </ApolloProvider>
-    <StrapiApi />
-  );
+  return <NoWork />;
 };
 
 export default App;
+
+// import client from './config/gql_config';
+// import { ApolloProvider } from '@apollo/client';
+// <ApolloProvider client={client}>
+//   <div>
+//     <Api />
+//   </div>
+// </ApolloProvider>
