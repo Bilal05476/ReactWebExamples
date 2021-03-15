@@ -1,7 +1,7 @@
 import React from "react";
 // import client from './config/gql_config';
 // import { ApolloProvider } from '@apollo/client';
-import MusicWeb from "./components/MusicWeb/MusicWeb";
+import StrapiApi from "./components/StrapiApi/StrapiApi";
 const App = () => {
   return (
     // <ApolloProvider client={client}>
@@ -9,7 +9,7 @@ const App = () => {
     //     <Api />
     //   </div>
     // </ApolloProvider>
-    <MusicWeb />
+    <StrapiApi />
   );
 };
 
