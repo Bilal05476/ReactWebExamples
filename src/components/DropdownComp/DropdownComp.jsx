@@ -4,25 +4,42 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { useState } from "react";
 
 const DropdownComp = () => {
-  const [value, setValue] = useState("");
+  // const [value, setValue] = useState("");
+  const [video, setVideo] = useState("");
   const handleSelect = (e) => {
-    setValue(e);
+    setVideo(e);
   };
+
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   setVideo("");
+  // }
+
   return (
     <div className="App container">
       <DropdownButton
         alignRight
-        title="Dropdown right"
-        id="dropdown-menu-align-right"
+        title="Web development video"
+        id="dropdown-menu-align-left"
         onSelect={handleSelect}
       >
-        <Dropdown.Item eventKey="option-1">option-1</Dropdown.Item>
-        <Dropdown.Item eventKey="option-2">option-2</Dropdown.Item>
-        <Dropdown.Item eventKey="option-3">option 3</Dropdown.Item>
-        <Dropdown.Divider />
-        <Dropdown.Item eventKey="some link">some link</Dropdown.Item>
+        <Dropdown.Item eventKey="https://www.youtube.com/embed/cocJx3ZZwOM">
+          Lecture 1
+        </Dropdown.Item>
+        <Dropdown.Item eventKey="https://www.youtube.com/embed/QaXh0rwE3Pg">
+          Lecture 2
+        </Dropdown.Item>
       </DropdownButton>
-      <h4>You selected {value}</h4>
+
+      <iframe
+        width="560"
+        height="315"
+        src={video}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        title="Webdevelopmt"
+      ></iframe>
     </div>
   );
 };
