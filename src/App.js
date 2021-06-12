@@ -1,8 +1,22 @@
-import React from "react";
-import NoWork from "./components/NoWork/NoWork";
+import React, { useState } from "react";
+import Tasks from "./components/TrackerApp/Tasks";
 
 const App = () => {
-  return <NoWork />;
+  const [tasks, setTasks] = useState([
+    {
+      id: 1,
+      name: "World",
+    },
+    {
+      id: 2,
+      name: "Hello",
+    },
+  ]);
+  return (
+    <>
+      <Tasks tasks={tasks} />
+    </>
+  );
 };
 
 export default App;
