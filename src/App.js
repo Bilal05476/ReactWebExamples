@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Tasks from "./components/TrackerApp/Tasks";
+import Header from "./components/TrackerApp/Header";
 
 const App = () => {
   const [tasks, setTasks] = useState([
@@ -14,6 +15,7 @@ const App = () => {
   ]);
   return (
     <>
+      <Header />
       <Tasks tasks={tasks} />
     </>
   );
